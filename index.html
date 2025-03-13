@@ -7,11 +7,10 @@
     content="LightGaussian efficiently compresses 3D scene data, enhancing performance and reducing storage needs while preserving visual quality.">
   <meta name="keywords" content="LightGaussian, lightgaussian, Gaussian Splatting, Gaussian">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LightGaussian: Unbounded 3D Gaussian Compression
-    with 15x Reduction and 200+ FPS</title>
+  <title>XXGaussian: Efficient XX and XXX</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <!--   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -93,16 +92,16 @@
             <h1 class="title is-1 publication-title"><span style="color: #27ae60;font-weight: bolder;">L</span>ight<span style="color: #27ae60;font-weight: bolder;">G</span>aussian: Unbounded 3D Gaussian Compression
               with 15x Reduction and 200+ FPS</h1>
 
-            <div class="is-size-4 publication-authors">
+<!--             <div class="is-size-4 publication-authors">
               <span class="univerity-block">
                 <strong style="color: #27ae60;">NeurIPS 2024, ✨ Spotlight ✨</strong>
               </span>
             </div>
+ -->
 
 
 
-
-            <div class="is-size-5 publication-authors">
+<!--             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://zhiwenfan.github.io/">Zhiwen Fan</a><sup>1</sup><sup>*</sup>,</span>
               <span class="author-block">
@@ -117,16 +116,14 @@
                 <a href="https://express.adobe.com/page/CAdrFMJ9QeI2y/">Zhangyang Wang</a><sup>1</sup>
 
             </div>
-
-            <div class="is-size-5 publication-authors">
+ -->
+<!--             <div class="is-size-5 publication-authors">
               <span class="author-block"><sup>1</sup>The University of Texas at Austin</span>
               <span class="author-block"><sup>2</sup>Xiamen University</span> <br>
               <span class="author-block"><sup>*</sup>denotes equal contribution</span>
-            </div>
+            </div> -->
             <!-- TODO: update paper and video link once upload -->
-            <div class="column has-text-centered">
-              <!-- <div class="publication-links"> -->
-                <!-- PDF Link. -->
+<!--             <div class="column has-text-centered">
                 <span class="link-block">
                 <a href="https://arxiv.org/pdf/2311.17245.pdf"
                    class="external-link button is-normal is-rounded is-dark">
@@ -145,7 +142,6 @@
                   <span>arXiv</span>
                 </a>
               </span>
-                <!-- Video Link. -->
                 <span class="link-block">
                   <a href="https://youtu.be/470hul75bSM" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -154,7 +150,6 @@
                     <span>Video</span>
                   </a>
                 </span>
-                <!-- Code Link. -->
                 <span class="link-block">
                   <a href="https://github.com/VITA-Group/LightGaussian"
                     class="external-link button is-normal is-rounded is-dark">
@@ -166,7 +161,7 @@
                 </span>
               </div>
 
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -260,34 +255,13 @@
           <div class="content has-text-justified">
 
             <p>
-              Recent advancements in real-time neural rendering using point-based techniques have paved the way for the
-              widespread adoption of 3D representations. However, foundational approaches like 3D Gaussian Splatting
-              come with
-              a substantial storage overhead caused by growing the SfM points to millions, often demanding
-              gigabyte-level disk
-              space for a single unbounded scene, posing significant scalability challenges and hindering the splatting
-              efficiency.
+              Para 1.
             </p>
             <p>
-              To address this challenge, we introduce LightGaussian, a novel method designed to transform 3D Gaussians
-              into
-              a more efficient and compact format. Drawing inspiration from the concept of Network Pruning,
-              <b>LightGaussian</b>
-              identifies Gaussians that are insignificant in contributing to the scene reconstruction and adopts a
-              pruning and
-              recovery process, effectively reducing redundancy in Gaussian counts while preserving visual effects.
-              Additionally,
-              LightGaussian employs distillation and pseudo-view augmentation to distill spherical harmonics to a lower
-              degree,
-              allowing knowledge transfer to more compact representations while maintaining scene appearance. Furthermore, we
-              propose
-              a hybrid scheme, VecTree Quantization, to quantize all attributes, resulting in lower bitwidth
-              representations with minimal accuracy losses.
+              Para 2.
             </p>
             <p>
-              In summary, LightGaussian achieves an averaged compression rate over 15× while boosting the FPS from 139
-              to 215,
-              enabling an efficient representation of complex scenes on Mip-NeRF 360, Tank & Temple datasets.
+              Para 3.
             </p>
             <p></p>
 
@@ -297,7 +271,7 @@
       <!--/ Abstract. -->
 
       <!-- Paper video. -->
-      <div class="columns is-centered has-text-centered">
+<!--       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Video</h2>
           <div class="publication-video">
@@ -307,7 +281,7 @@
            
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -323,7 +297,7 @@
           <div class="content has-text-justified">
             <img src="./static/images/LG.png">
 
-              <p><strong>The overall pipeline of LightGaussian.</strong> 3D Gaussians are optimized from multi-view images and SfM points. LightGaussian first calculates the global significance for each Gaussian on training data, where Gaussians with the least significance are pruned. A subsequent distillation with synthesized pseudo-views is introduced to transfer the SH into a compact format. Vector quantization, consisting of codebook initialization and assignment, is further introduced for reducing the model bandwidth.</p>
+              <p>TBD.</p>
 
 
 
@@ -527,7 +501,7 @@
 </section> -->
 
   
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@misc{fan2023lightgaussian,
@@ -539,7 +513,7 @@
   primaryClass={cs.CV},
 }</code></pre>
   </div>
-</section>
+</section> -->
 
   <!-- TODO: update the arxiv link and github -->
   <footer class="footer">
