@@ -42,6 +42,34 @@
 
 </head>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    let video1 = document.querySelector("#example4 .bal-after video");
+    let video2 = document.querySelector("#example4 .bal-before video");
+    let videosLoaded = 0;
+    function checkVideosLoaded() {
+      videosLoaded++;
+      if (videosLoaded === 2) {
+        video1.play();
+        video2.play();
+      }
+    }
+
+    video1.addEventListener("canplaythrough", checkVideosLoaded);
+    video2.addEventListener("canplaythrough", checkVideosLoaded);
+    function syncVideos() {
+      if (Math.abs(video1.currentTime - video2.currentTime) > 0.05) {
+        video2.currentTime = video1.currentTime;
+      }
+    }
+
+    video1.addEventListener("timeupdate", syncVideos);
+    video2.addEventListener("timeupdate", syncVideos);
+  });
+</script>
+
+
+
 <body>
 
   <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
